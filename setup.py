@@ -24,6 +24,6 @@ setup(
         'Programming Language :: Python :: 2',
     ],
     dependency_links=[
-        'git+https://github.com/f3rm4rf3r/python-adb.git@rbp#egg=adbpatched-0'
+        'git+https://github.com/f3rm4rf3r/python-adb.git@rpb#egg=adbpatched-0'
     ],
 )
