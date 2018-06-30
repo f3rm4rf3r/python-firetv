@@ -9,7 +9,7 @@ setup(
     author='happyleaves',
     author_email='happyleaves.tfr@gmail.com',
     packages=['firetv'],
-    install_requires=['git+git://github.com/f3rm4rf3r/python-adb.git@rbp'],
+    install_requires=['adbpatched'],
     extras_require={
         'firetv-server': ['Flask>=0.10.1', 'PyYAML>=3.12']
     },
@@ -22,5 +22,8 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2',
-    ]
+    ],
+    dependency_links=[
+        'git+https://github.com/f3rm4rf3r/python-adb.git@rbp#egg=adbpatched-0'
+    ],
 )
